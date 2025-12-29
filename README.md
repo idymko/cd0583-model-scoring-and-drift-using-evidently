@@ -87,7 +87,7 @@ The `main.py` file works on monitoring bike demand data. It involves the followi
 4. Connect a repository using Github
 5. Make sure to select the proper GitHub repo that you forked from Udacity repo.
 6. Press on Connect
-7. Make sure to give a name for your static site. The publish directory should be ./static. Then, press on Create Static Site.
+7. Make sure to give a name for your static site. The publish directory should be ./static. Then, press on Deploy Static Site.
 8. Wait for the deployment to complete. You sould see: ‘Your site is live’. Then, just navigate to the deployed site.
 
 
