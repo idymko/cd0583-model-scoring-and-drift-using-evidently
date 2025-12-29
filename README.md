@@ -1,5 +1,11 @@
 # Monitoring machine learning models in production
 
+Environment setup
+* conda create -n score-drift "python=3.10"
+* conda activate score-drift
+* conda install pip
+* pip intstall -r requirements.txt 
+
 In this tutorial, we will learn how to monitor machine learning models in production using an open-source framework called [Evidently](https://github.com/evidentlyai/evidently). In their own words - *"Evidently helps analyze and track data and ML model quality throughout the model lifecycle. You can think of it as an evaluation layer that fits into the existing ML stack."*
 
 Evidently helps in generating:
@@ -71,6 +77,20 @@ The `main.py` file works on monitoring bike demand data. It involves the followi
     ```
     >Note: We have implemented the code to calculate data drift for Week 1 and 2.
 
+
+
+### Deploying on Render
+
+1. Navigate to https://render.com/ and choose ‘Get Started for Free’ or to https://dashboard.render.com/ if you already have an account.
+2. Fill-out the signup form and activate your email.
+3. Once you complete the signup process, choose New → Static Site
+4. Connect a repository using Github
+5. Make sure to select the proper GitHub repo that you forked from Udacity repo.
+6. Press on Connect
+7. Make sure to give a name for your static site. The publish directory should be ./static. Then, press on Create Static Site.
+8. Wait for the deployment to complete. You sould see: ‘Your site is live’. Then, just navigate to the deployed site.
+
+
 ### Deploying on Heroku
 
 Follow the steps mentioned below:
@@ -93,3 +113,4 @@ Follow the steps mentioned below:
 
     Replace *week1* with *week2* in the url above to see data drift after week 2.
     ![Data Drift Week 2](./images/evidently_data_drift_week2.png)
+
